@@ -1,18 +1,20 @@
 package edu.facturacion;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Factura {
 
 	
 	private int numero;
 	private ArrayList <Producto> productos;
+	private Date fecha;
 	
-	
-	public Factura(int numeros, ArrayList<Producto> productos) {
+
+	public Factura(int numeros, ArrayList<Producto> productos, Date fecha) {
 		super();
 		this.numero = numeros;
 		this.productos = productos;
+		this.fecha = fecha;
 	}
 
 	public int getNumero() {
@@ -29,6 +31,12 @@ public class Factura {
 	
 	public void setProductos (ArrayList<Producto> productos) {
 		this.productos = productos;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Factura [numero= " + numero + ", \n\nproductos= \n" + productos + ",\n\n fecha= " + fecha + "]";
 	}
 
 }

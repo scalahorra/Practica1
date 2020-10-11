@@ -35,6 +35,8 @@ public class Producto {
 		this.Iva = iva;
 	}
 	
+	
+
 	public double getImporte() {
 		return importe;
 	}
@@ -57,8 +59,10 @@ public class Producto {
 	
 	@Override
 	public String toString() {
-		return "Producto [descripcion = " + descripcion + ", importe = " + importe + ", IVA = " + Iva + " ]";
+		return "Producto [descripcion = " + descripcion + ", importe = " + importe + ", IVA = " + Iva + " ] \n";
 	}
+
+	
 	
 
 }
